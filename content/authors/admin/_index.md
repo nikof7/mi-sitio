@@ -1,29 +1,23 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad.
 education:
   courses:
-  - course: PhD in Artificial Intelligence
+  - course: Licenciatura en Ciencias Biológicas
     institution: Facultad de Ciencias, UdelaR
     year: 2018-presente
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
 email: ""
-first_name: Alice
+first_name: Nicolás
 highlight_name: true
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-last_name: Wu
+- Ciencia de datos
+- Wildlife
+- Conservación
+- Ciencia-sociedad
+last_name: Fernández-Sauleda
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
-role: Professor of Artificial Intelligence
+- name: Facultad de Ciencias, UdelaR.
+  url: https://www.fcien.edu.uy/
+role: Estudiante de grado en Cs. Biológicas.
 social:
 - icon: envelope
   icon_pack: fas
@@ -46,9 +40,8 @@ social:
 status:
   icon: 🌱
 superuser: true
-title: Nicolás Fenández
+title: Nicolás Fernández-Sauleda
 ---
 
-Soy un estudiante de ciencias biológicas, con interés 
-Alice Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad.
 {style="text-align: justify;"}

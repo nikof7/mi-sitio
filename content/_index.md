@@ -31,7 +31,7 @@ sections:
       description: Taught electronic engineering and researched semiconductor physics.
       location: California
       title: Professor of Semiconductor Physics
-    title: Experience
+    title: Experiencia
   design:
     columns: "2"
 - block: accomplishments
@@ -83,7 +83,7 @@ sections:
     order: desc
     subtitle: ""
     text: ""
-    title: Recent Posts
+    title: Posts recientes
   design:
     columns: "2"
     view: compact
@@ -101,7 +101,7 @@ sections:
     filters:
       folders:
       - project
-    title: Projects
+    title: Proyectos
   design:
     columns: "1"
     flip_alt_rows: false
@@ -126,7 +126,7 @@ sections:
     contact_links:
     - icon: twitter
       icon_pack: fab
-      link: https://twitter.com/Twitter
+      link: https://twitter.com/nicof_7
       name: "@nicof_7"
     email: nfernandez@fcien.edu.uy
     subtitle: null
