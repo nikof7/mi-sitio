@@ -44,7 +44,7 @@ A simple mindmap defined as a Markdown list:
 <div class="highlight">
 <pre class="chroma">
 <code>
-```markmap {height="200px"}
+  ```markmap {height="200px"}
 - Hugo Modules
   - wowchemy
   - wowchemy-plugins-netlify
@@ -67,9 +67,9 @@ renders as
 
 A more advanced mindmap with formatting, code blocks, and math:
 
-<div class="highlight">
-<pre class="chroma">
-<code>
+  <div class="highlight">
+  <pre class="chroma">
+  <code>
 ```markmap
 - Mindmaps
   - Links

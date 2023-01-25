@@ -38,13 +38,13 @@ sections:
   content:
     date_format: Jan 2006
     items:
-    - certificate_url: https://www.coursera.org
+    - certificate_url: https://www.udemy.com/certificate/UC-fba3a144-48dd-4715-9107-47ec7a76c77c/
       date_end: ""
       date_start: "2021-01-25"
       description: ""
-      organization: Coursera
-      organization_url: https://www.coursera.org
-      title: Neural Networks and Deep Learning
+      organization: Udemy
+      organization_url: https://www.udemy.com/
+      title: Learn Data Science and Machine Learning with R from A-Z Course
       url: ""
     - certificate_url: https://www.edx.org
       date_end: ""
@@ -66,28 +66,6 @@ sections:
     title: Logros
   design:
     columns: "2"
-- block: collection
-  content:
-    count: 5
-    filters:
-      author: ""
-      category: ""
-      exclude_featured: false
-      exclude_future: false
-      exclude_past: false
-      folders:
-      - post
-      publication_type: ""
-      tag: ""
-    offset: 0
-    order: desc
-    subtitle: ""
-    text: ""
-    title: Posts recientes
-  design:
-    columns: "2"
-    view: compact
-  id: posts
 - block: portfolio
   content:
     buttons:
