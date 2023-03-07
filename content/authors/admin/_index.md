@@ -40,7 +40,7 @@ social:
 status:
   icon: 🌱
 superuser: true
-title: Nicolás Fernández-Sauleda
+title:
 ---
 
 Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad.

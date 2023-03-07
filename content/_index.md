@@ -34,38 +34,56 @@ sections:
     title: Experiencia
   design:
     columns: "2"
+  id: experience
 - block: accomplishments
   content:
     date_format: Jan 2006
     items:
     - certificate_url: https://www.udemy.com/certificate/UC-fba3a144-48dd-4715-9107-47ec7a76c77c/
       date_end: ""
-      date_start: "2021-01-25"
+      date_start: "2023-01-22"
       description: ""
       organization: Udemy
       organization_url: https://www.udemy.com/
       title: Learn Data Science and Machine Learning with R from A-Z Course
       url: ""
-    - certificate_url: https://www.edx.org
+    - certificate_url: https://www.udemy.com/certificate/UC-b9e93965-eb71-4da8-ae4a-b7986c5cb80b/
       date_end: ""
       date_start: "2021-01-01"
-      description: Formulated informed blockchain models, hypotheses, and use cases.
-      organization: edX
-      organization_url: https://www.edx.org
-      title: Blockchain Fundamentals
-      url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    - certificate_url: https://www.datacamp.com
-      date_end: "2020-12-21"
-      date_start: "2020-07-01"
+      description: ""
+      organization: Udemy
+      organization_url: https://www.udemy.com/
+      title: Adobe Illustrator CC - Essentials Training Course.
+      url: ""
+    - certificate_url: uploads/chea-certificado.pdf
+      date_end: "2021-09-08"
+      date_start: "2021-07-19"
+      description: ""
+      organization: Chea-UdelaR-CSIC
+      organization_url: https://www.chea.edu.uy/
+      title: Manejo y uso de animales no tradicionales en investigación.
+      url: ""
+    - certificate_url: https://www.datacamp.com/statement-of-accomplishment/course/19d39f6315199339c467c5fb68b66882c3ea1ac3
+      date_end: ""
+      date_start: "2021-12-06"
       description: ""
       organization: DataCamp
-      organization_url: https://www.datacamp.com
-      title: Object-Oriented Programming in R
+      organization_url: https://www.udemy.com/
+      title: Introduction to R
+      url: ""
+    - certificate_url: uploads/alianza-certificado.pdf
+      date_end: ""
+      date_start: "2016-12-21"
+      description: ""
+      organization: Alianza
+      organization_url: https://www.alianza.edu.uy/es/
+      title: Teens high-intermediate course - Independent User at B2
       url: ""
     subtitle: null
     title: Logros
   design:
     columns: "2"
+  id: accomplishments
 - block: portfolio
   content:
     buttons:
@@ -91,7 +109,7 @@ sections:
       featured_only: true
       folders:
       - publication
-    title: Featured Publications
+    title: Publiciones
   design:
     columns: "2"
     view: card
@@ -108,9 +126,8 @@ sections:
       name: "@nicof_7"
     email: nfernandez@fcien.edu.uy
     subtitle: null
-    text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis
-      ut magna et, vehicula efficitur enim.
-    title: Contact
+    text: ""
+    title: Contacto
   design:
     columns: "2"
   id: contact

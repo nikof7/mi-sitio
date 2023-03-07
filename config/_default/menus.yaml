@@ -7,18 +7,23 @@ main:
   - name: Inicio
     url: '#about'
     weight: 10
+  - name: Experiencia
+    url: '#experience'
+    weight: 50
+  - name: Logros
+    url: '#accomplishments'
+    weight: 50
   - name: Proyectos
     url: '#projects'
-    weight: 30
+    weight: 50
   - name: Publicaciones
     url: '#featured'
     weight: 50
   - name: Contacto
     url: '#contact'
-    weight: 60
-
+    weight: 50
 # Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
+#To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
 #  - name: CV
-#    url: uploads/resume.pdf
+#    url: uploads/cv.pdf
 #    weight: 70
