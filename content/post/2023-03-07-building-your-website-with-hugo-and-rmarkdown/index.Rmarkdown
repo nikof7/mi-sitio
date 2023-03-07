@@ -1,0 +1,243 @@
+---
+title: Building your website with Hugo and RMarkdown
+author: ''
+date: '2023-03-07'
+slug: building-your-website-with-hugo-and-rmarkdown
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2023-03-07T12:03:23-03:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(lubridate)
+library(kableExtra)
+library(vegan)
+library(ggdendro)
+library(plotly)
+library(rmarkdown)
+```
+
+Estuve practicando con algunos estadísticos y gráficos. Usé la carpeta datos que estan en drive; carpeta "Planillas Excel", y cargué los archivos
+
+- "2020_L Garzón.xlsx"
+- "2020_LRocha_1ercampaña_1-5
+- 10_NminyDUR.xlsx" y "2020_Solis Grande.xlsx".
+
+De cada tabla me quedé con el Punto, Fecha, Hora, Especie, Cantidad de individuos y Observaciones, no elimine ninguna fila. Luego unifiqué las tres en un mismo archivo csv.
+
+# Importando tabla
+
+```{r message=FALSE, warning=FALSE}
+data1 <- read_csv2("./datos/datos.csv", col_types = cols(
+  Punto = col_character(),
+  Fecha = col_date(),
+  Hora = col_time(),
+  Especie = col_character(),
+  N = col_integer(),
+  Observaciones = col_character()
+))
+```
+
+```{r}
+tail(unique(data1$Especie))
+```
+
+Se observa que hay especies repetidas, algunas se les agrega "?" o simplemente estan mal escritas. Ej. L. gymnocerus, L. gymnocercus, L. gymnocercus?. En total hay 969 registros.
+
+# Limpiando datos
+Limpie los datos de "Especie" usando open refine. Deje solo los registros de mamiferos silvestres que lleguen hasta especie.
+
+```{r message=FALSE, warning=FALSE}
+data <- read_csv2("./datos/datos-corredigos-silvestres.csv", col_types = cols( 
+  Punto = col_character(),
+  Fecha = col_date(),
+  Hora = col_time(),
+  Especie = col_character(),
+  N = col_integer(),
+  Observaciones = col_character()
+))
+```
+
+
+```{r echo=FALSE}
+head(data) %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = F)
+```
+
+# Cantidad de registros por especie
+Construyo una tabla con la cantidad de registros por especie y calculo el porcentaje de cada una.
+```{r}
+records_per_species <- data %>%
+  group_by(Especie) %>% 
+  summarize(Total = sum(N)) %>%
+  arrange(Total) %>% 
+  mutate(perc = round(Total / sum(Total), 3))
+```
+
+```{r echo=FALSE}
+records_per_species %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+Gráfico:
+```{r}
+r <- records_per_species %>% 
+  ggplot(aes(y=reorder(Especie, perc), x=perc)) +
+  geom_col(fill = "gray70") +
+  geom_text(aes(label = paste(perc*100, "%", sep ="")), nudge_x = 0.015, size=3.2) +
+  labs(
+    title = "Porcentaje de registros por especie",
+    subtitle = "Para todos los sitios, falta destacar especies prioritarias o estados de conservaci0n",
+    x = "Porcentaje de registros",
+    y = "",
+  ) +
+  scale_x_continuous(labels = scales::percent) +
+  theme(axis.text.y=element_text(face="italic"),
+        panel.background = element_rect(fill = "white", colour = "white", size = 0.5, linetype = "solid"),
+        panel.grid.major = element_line(size = 0.1, linetype = 'solid', colour = "#f2f2f2"),
+        panel.grid.minor = element_line(size = 0.1, linetype = 'solid', colour = "#f2f2f2")
+  )
+
+ggplotly(r)
+
+```
+
+# Probando el paquete "vegan".
+
+Para utilizar este paquete necesitamos que la información esté organizada de esta forma:
+
+| **Site** | **Sp1** | **Sp2** | **Sp3** | **SpN** |
+|:--------:|:-------:|:-------:|:-------:|:-------:|
+|   **1**  |    4    |    2    |    0    |    0    |
+|   **2**  |    0    |    0    |    2    |    5    |
+|   **N**  |    0    |    0    |    0    |    10   |
+
+Es decir, la primera columna son los sitios en formato numérico y, por lo tanto, cada fila corresponde a un sitio, el resto de columnas son las especies y el contenido en las celdas es la cantidad de registros para cada sp.
+
+## Armado de la tabla
+
+Elimino la fecha, hora y observaciones porque no tienen sentido para este análisis.
+
+```{r}
+data_vegan_long <- data %>%
+  mutate(Punto=str_extract(Punto, "^.{2}")) %>%
+  select(Punto, Especie, N) %>% 
+  group_by(Punto, Especie) %>% 
+  summarize(Total = sum(N), .groups = 'drop')
+```
+
+La tabla ahora luce de esta forma:
+
+```{r echo=FALSE}
+head(data_vegan_long) %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+Para cada punto hay un n de las especies. Con esto, ahora puedo transformar esta tabla larga (long) a una ancha (wide) que el paquete vegan utiliza.
+```{r}
+data_vegan_wide <- data_vegan_long %>% 
+  spread(Especie, Total) %>% 
+  mutate_if(is.numeric, ~replace(., is.na(.), 0)) %>%   # rellena con ceros los NA's
+  column_to_rownames("Punto")
+
+### Guardo qué número es cada punto
+puntos <- row.names(data_vegan_wide)
+
+#data_vegan_wide <- select(data_vegan_wide, -Punto)
+```
+
+```{r echo=FALSE}
+head(data_vegan_wide) %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover")) %>% 
+  scroll_box(width = "100%")
+```
+
+## Cálculo de estadísticos
+
+Riqueza, diversidad, índice de dominancia, etc. Elimino los SD porque dan todos cero ¿qué será? Además, desde chao en adelante dan todos números enteros. Cuando hago un pool y calculo lo mismo da números con coma ¿es importante?
+```{r}
+datos <- data_vegan_wide
+
+outcome <- tibble(
+    richness_ = specnumber(datos),
+    shannon_ = diversity(datos, index = "shannon"),
+    simpson_ = diversity(datos, index = "simpson"),
+    invsimpson_ = diversity(datos, index = "invsimpson"),
+    specpool(datos, pool = puntos)
+  ) %>% 
+  select(-Species, -ends_with(".se")) %>%
+  mutate(Punto = puntos, .before=1)
+```
+
+```{r echo=FALSE}
+outcome %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover")) %>% 
+  scroll_box(width = "100%")
+```
+
+```{r}
+paged_table(outcome)
+```
+
+
+Esto es lo que decía antes sobre los números con coma:
+
+
+```{r}
+specpool(datos)
+```
+Abundancia de las especies en los diferentes sitios:
+
+```{r warning=FALSE}
+mdsEuclidean <- metaMDS(datos, distance="euc", autotransform=FALSE, trace=0)
+plot(mdsEuclidean, display="sites", type="text", main = "Euclidean")
+mdsCurtis <- metaMDS(datos, distance="bray", autotransform=FALSE, trace=0)
+plot(mdsCurtis, display="sites", type="text", main="BrayCurtis")
+
+```
+
+Son gráficos multidimensionales no métricos (NMDS) muestran las distancias aproximadas entre sitios. Las distancias euclidianas tienden a enfatizar las diferencias debido a las especies más abundantes, mientras que BrayCurtis no.
+
+```{r}
+#Estandariza
+datos.perfil <- decostand(datos, method = "total")
+# Verificación, tiene que dar 1 en todos.
+apply(datos.perfil, 1, sum)
+# Matriz de distancias entre perfiles
+d18 <- dist(datos.perfil, method = "euclidean")
+# Cluster utilizando esta distancia entre sitios.
+cl18 <- hclust(d18)
+
+p <- ggdendrogram(cl18, rotate = FALSE, size = 2) +
+  labs(title = "Dendrograma con distancias euclidianas",
+       x = "Sitios",
+       y = "Similitud")
+
+ggplotly(p)
+
+```
+
+
+# Anotaciones
+Dejo algunas inquietudes:
+
+- ¿Qué pasa con los mamíferos domésticos? ¿Cómo se incluirían en el análisis?
+- ¿Cómo calcular esfuerzo de muestreo? ¿Qué tener en cuenta? Esto supongo que debe ser necesario porque en todos los sitios el esfuerzo debe ser diferente y debe influenciar a riqueza y abundancia de las especies en los sitios.
+- Cada área protegida tiene varios sistemas ¿estos se tienen que agrupar todos en uno? Así lo hice en el documento

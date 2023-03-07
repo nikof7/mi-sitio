@@ -1,49 +1,106 @@
 ---
-title: "Hello R Markdown"
-author: "Frida Gomam"
-date: 2020-12-01T21:13:14-05:00
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
+title: 'NaturalistaUY: Fauna atropellada del Uruguay'
+output:
+  html_document: default
 ---
 
-
-
-# R Markdown
-
-This is an R Markdown doasdcument. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
- 
-Yoasdsadasdasdasdas asdf asdfasd fsd
-
-```r
-summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit <- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Including Plots
+```{r, include=FALSE}
+#Paquetes
 
-You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(lubridate)
+```
+
+## Utilizando el csv del proyecto
+
+Se descarga el archivo csv desde iNaturalist y se carga.
+
+```r
+data <- read.csv2("data.csv", sep = ",") %>% 
+  select(id, user_id, iconic_taxon_name, scientific_name, common_name, quality_grade, latitude, longitude, time_observed_at, created_at, tag_list, description, license, url) %>% 
+  as_tibble() %>%
+  mutate(time_observed_at = ymd_hms(time_observed_at), created_at = ymd_hms(created_at))
+```
+
+```r
+data %>% 
+  head() %>% 
+  kbl(col.names = c("ID", "ID de usuario", "Clase", "Nombre científico", "Nombre común", "Grado de calidad", "Latitud", "Longitud", "Observado", "Creado", "Lista de tags", "Descripción", "Licencia", "URL")) %>% 
+  kable_paper("striped", full_width = F, html_font="Arial") %>%
+  scroll_box(width = "100%")
+```
+
+## Exploración de los datos
+
+Se comienza por describir la cantidad de observaciones por clase taxonómica.
+
+```r
+obs_per_class <- data %>% 
+  group_by(iconic_taxon_name) %>% 
+  summarise(Sum = n()) %>% 
+  arrange(Sum)
+```
+```r
+kbl(obs_per_class, align = "l", col.names = c("Clase", "Cantidad")) %>%
+  kable_paper(html_font="Arial")
+```
+
+Se observa un claro sesgo hacia los registros de mamíferos.
+
+
+Pasemos a analizar esta característica pero en relación a los años, para esto se debe trabajar un poco la información.
 
 
 ```r
-plot(x = cars$speed, y = cars$dist)
+data_times <- data %>%
+  drop_na(time_observed_at) %>% 
+  arrange(time_observed_at) %>%
+  mutate(years = year(time_observed_at)) %>% 
+  select(id, iconic_taxon_name, years) 
 ```
 
-<div class="figure">
-<img src="{{< blogdown/postref >}}index.en_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
-<p class="caption">Figure 1: A fancy pie chart.</p>
-</div>
+
+``````r
+data_times %>% 
+  head() %>% 
+  kbl(align = "l", col.names = c("ID", "Clase taxonómica", "Año")) %>%
+  kable_paper(html_font="Arial")
+```
+
+Total de registros por año
+```r
+data_times %>%
+  mutate(years = as.integer(years)) %>% 
+  group_by(years) %>%
+  summarise(Sum = n()) %>% 
+  arrange(-years) %>%
+  filter(years != '2023')
+```
+Registros por año por taxón
+
+```r
+data_times %>%
+  group_by(iconic_taxon_name, years)
+```
+
+
+
+```r
+data_times %>% 
+  ggplot(aes(x=years, fill=factor(iconic_taxon_name))) +
+  geom_bar(position=position_dodge()) +
+  scale_x_continuous(labels=as.character(data_times$years),breaks=data_times$years)
+```
+
+
+
+
+
+
+
