@@ -1,7 +1,22 @@
 ---
 title: 'NaturalistaUY: Fauna atropellada del Uruguay'
-output:
-  html_document: default
+author: ''
+date: '2023-03-15'
+slug: naturalistauy-atropellos
+categories: []
+tags: []
+summary: ''
+authors: []
+external_link: ''
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+url_code: ''
+url_pdf: ''
+url_slides: ''
+url_video: ''
+slides: ''
 ---
 
 ```{r setup, include=FALSE}
@@ -9,26 +24,27 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r, include=FALSE}
-#Paquetes
+# Paquetes
 
 library(tidyverse)
 library(knitr)
 library(kableExtra)
 library(lubridate)
+library(rmarkdown)
 ```
 
 ## Utilizando el csv del proyecto
 
 Se descarga el archivo csv desde iNaturalist y se carga.
 
-```r
+```{r}
 data <- read.csv2("data.csv", sep = ",") %>% 
   select(id, user_id, iconic_taxon_name, scientific_name, common_name, quality_grade, latitude, longitude, time_observed_at, created_at, tag_list, description, license, url) %>% 
   as_tibble() %>%
   mutate(time_observed_at = ymd_hms(time_observed_at), created_at = ymd_hms(created_at))
 ```
 
-```r
+```{r echo=FALSE}
 data %>% 
   head() %>% 
   kbl(col.names = c("ID", "ID de usuario", "Clase", "Nombre científico", "Nombre común", "Grado de calidad", "Latitud", "Longitud", "Observado", "Creado", "Lista de tags", "Descripción", "Licencia", "URL")) %>% 
@@ -40,15 +56,16 @@ data %>%
 
 Se comienza por describir la cantidad de observaciones por clase taxonómica.
 
-```r
+```{r}
 obs_per_class <- data %>% 
   group_by(iconic_taxon_name) %>% 
   summarise(Sum = n()) %>% 
   arrange(Sum)
 ```
-```r
-kbl(obs_per_class, align = "l", col.names = c("Clase", "Cantidad")) %>%
-  kable_paper(html_font="Arial")
+
+```{r echo=FALSE}
+kbl(obs_per_class, align = "c", col.names = c("Clase", "Cantidad")) %>% 
+  kable_material_dark()
 ```
 
 Se observa un claro sesgo hacia los registros de mamíferos.
@@ -57,7 +74,7 @@ Se observa un claro sesgo hacia los registros de mamíferos.
 Pasemos a analizar esta característica pero en relación a los años, para esto se debe trabajar un poco la información.
 
 
-```r
+```{r}
 data_times <- data %>%
   drop_na(time_observed_at) %>% 
   arrange(time_observed_at) %>%
@@ -66,15 +83,15 @@ data_times <- data %>%
 ```
 
 
-``````r
+```{r echo=FALSE}
 data_times %>% 
   head() %>% 
-  kbl(align = "l", col.names = c("ID", "Clase taxonómica", "Año")) %>%
-  kable_paper(html_font="Arial")
+  kbl(align = "l", col.names = c("ID", "Clase taxonómica", "Año"))  %>% 
+  kable_material_dark()
 ```
 
 Total de registros por año
-```r
+```{r}
 data_times %>%
   mutate(years = as.integer(years)) %>% 
   group_by(years) %>%
@@ -84,14 +101,14 @@ data_times %>%
 ```
 Registros por año por taxón
 
-```r
+```{r, echo=FALSE}
 data_times %>%
   group_by(iconic_taxon_name, years)
 ```
 
 
 
-```r
+```{r}
 data_times %>% 
   ggplot(aes(x=years, fill=factor(iconic_taxon_name))) +
   geom_bar(position=position_dodge()) +

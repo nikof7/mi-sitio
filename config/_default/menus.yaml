@@ -7,18 +7,15 @@ main:
   - name: Inicio
     url: '#about'
     weight: 10
-  - name: Experiencia
-    url: '#experience'
-    weight: 50
-  - name: Logros
-    url: '#accomplishments'
-    weight: 50
-  - name: Proyectos
-    url: '#projects'
-    weight: 50
   - name: Publicaciones
     url: '#featured'
-    weight: 50
+    weight: 20
+  - name: Proyectos
+    url: '#projects'
+    weight: 30
+  - name: Logros
+    url: '#accomplishments'
+    weight: 40
   - name: Contacto
     url: '#contact'
     weight: 50
