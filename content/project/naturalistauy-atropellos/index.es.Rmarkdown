@@ -4,14 +4,14 @@ author: ''
 date: '2023-03-15'
 slug: naturalistauy-atropellos
 categories: []
-tags: []
+tags: [NaturalistaUY]
 summary: 'Este proyecto busca analizar y describir los datos sobre atropellos de vertebrados en el Uruguay. Utiliza los datos que se reúnen en otro proyecto de NaturalistaUY llamado "Fauna Atropellada del Uruguay'
 authors: []
-external_link: 'https://www.naturalista.uy/projects/fauna-atropellada-del-uruguay'
+external_link: ''
 image:
   caption: ''
   focal_point: ''
-  preview_only: no
+  preview_only: yes
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -30,8 +30,14 @@ library(tidyverse)
 library(knitr)
 library(kableExtra)
 library(lubridate)
-library(rmarkdown)
 ```
+
+[Puedes visitar el proyecto de Naturalista UY desde aquí](https://www.naturalista.uy/projects/fauna-atropellada-del-uruguay)
+
+
+Falta describir un poco más sobre de qué es el proyecto. En qué etapa está, a dónde apunta, etc.
+Revisar código y datos generados.
+Actualizar base de datos.
 
 ## Utilizando el csv del proyecto
 
@@ -47,8 +53,8 @@ data <- read.csv2("data.csv", sep = ",") %>%
 ```{r echo=FALSE}
 data %>% 
   head() %>% 
-  kbl(col.names = c("ID", "ID de usuario", "Clase", "Nombre científico", "Nombre común", "Grado de calidad", "Latitud", "Longitud", "Observado", "Creado", "Lista de tags", "Descripción", "Licencia", "URL")) %>% 
-  kable_paper("striped", full_width = F, html_font="Arial") %>%
+  kbl(col.names = c("ID", "ID de usuario", "Clase", "Nombre científico", "Nombre común", "Grado de calidad", "Latitud", "Longitud", "Observado", "Creado", "Lista de tags", "Descripción", "Licencia", "URL"))   %>% 
+  kable_material_dark() %>%
   scroll_box(width = "100%")
 ```
 
@@ -79,31 +85,46 @@ data_times <- data %>%
   drop_na(time_observed_at) %>% 
   arrange(time_observed_at) %>%
   mutate(years = year(time_observed_at)) %>% 
-  select(id, iconic_taxon_name, years) 
+  select(iconic_taxon_name, years) 
 ```
 
 
 ```{r echo=FALSE}
 data_times %>% 
   head() %>% 
-  kbl(align = "l", col.names = c("ID", "Clase taxonómica", "Año"))  %>% 
+  kbl(align = "l", col.names = c("Clase taxonómica", "Año"))  %>% 
   kable_material_dark()
 ```
 
 Total de registros por año
 ```{r}
-data_times %>%
+data_total_year <- data_times %>%
   mutate(years = as.integer(years)) %>% 
   group_by(years) %>%
   summarise(Sum = n()) %>% 
   arrange(-years) %>%
   filter(years != '2023')
 ```
+
+```{r echo=FALSE}
+data_total_year %>% 
+  head() %>% 
+  kbl(align = "l", col.names = c("Años", "Total"))  %>% 
+  kable_material_dark()
+```
+
 Registros por año por taxón
 
-```{r, echo=FALSE}
-data_times %>%
+```{r}
+data_year_taxon <- data_times %>%
   group_by(iconic_taxon_name, years)
+```
+
+```{r echo=FALSE}
+data_year_taxon %>%
+  tail() %>% 
+  kbl(align = "l", col.names = c("Clase taxonómica", "Año"))  %>% 
+  kable_material_dark()
 ```
 
 

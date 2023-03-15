@@ -4,14 +4,14 @@ author: ''
 date: '2023-03-15'
 slug: naturalistauy-atropellos
 categories: []
-tags: []
+tags: [NaturalistaUY]
 summary: 'Este proyecto busca analizar y describir los datos sobre atropellos de vertebrados en el Uruguay. Utiliza los datos que se reúnen en otro proyecto de NaturalistaUY llamado "Fauna Atropellada del Uruguay'
 authors: []
-external_link: 'https://www.naturalista.uy/projects/fauna-atropellada-del-uruguay'
+external_link: ''
 image:
   caption: ''
   focal_point: ''
-  preview_only: no
+  preview_only: yes
 url_code: ''
 url_pdf: ''
 url_slides: ''
@@ -24,10 +24,21 @@ slides: ''
 <link href="{{< blogdown/postref >}}index.es_files/lightable/lightable.css" rel="stylesheet" />
 <script src="{{< blogdown/postref >}}index.es_files/kePrint/kePrint.js"></script>
 <link href="{{< blogdown/postref >}}index.es_files/lightable/lightable.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index.es_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index.es_files/lightable/lightable.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index.es_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index.es_files/lightable/lightable.css" rel="stylesheet" />
 
 
 
 
+
+[Puedes visitar el proyecto de Naturalista UY desde aquí](https://www.naturalista.uy/projects/fauna-atropellada-del-uruguay)
+
+
+Falta describir un poco más sobre de qué es el proyecto. En qué etapa está, a dónde apunta, etc.
+Revisar código y datos generados.
+Actualizar base de datos.
 
 ## Utilizando el csv del proyecto
 
@@ -41,7 +52,7 @@ data <- read.csv2("data.csv", sep = ",") %>%
   mutate(time_observed_at = ymd_hms(time_observed_at), created_at = ymd_hms(created_at))
 ```
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; "><table class=" lightable-paper lightable-striped" style="font-family: Arial; width: auto !important; margin-left: auto; margin-right: auto;">
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; "><table class=" lightable-material-dark" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
  <thead>
   <tr>
    <th style="text-align:right;"> ID </th>
@@ -211,46 +222,39 @@ data_times <- data %>%
   drop_na(time_observed_at) %>% 
   arrange(time_observed_at) %>%
   mutate(years = year(time_observed_at)) %>% 
-  select(id, iconic_taxon_name, years) 
+  select(iconic_taxon_name, years) 
 ```
 
 
 <table class=" lightable-material-dark" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
  <thead>
   <tr>
-   <th style="text-align:left;"> ID </th>
    <th style="text-align:left;"> Clase taxonómica </th>
    <th style="text-align:left;"> Año </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> 1266639 </td>
    <td style="text-align:left;"> Mammalia </td>
    <td style="text-align:left;"> 2011 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 45628630 </td>
    <td style="text-align:left;"> Mammalia </td>
    <td style="text-align:left;"> 2012 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 45628628 </td>
    <td style="text-align:left;"> Mammalia </td>
    <td style="text-align:left;"> 2012 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 134577366 </td>
    <td style="text-align:left;"> Mammalia </td>
    <td style="text-align:left;"> 2014 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 145689068 </td>
    <td style="text-align:left;"> Mammalia </td>
    <td style="text-align:left;"> 2015 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> 145690596 </td>
    <td style="text-align:left;"> Mammalia </td>
    <td style="text-align:left;"> 2015 </td>
   </tr>
@@ -260,7 +264,7 @@ data_times <- data %>%
 Total de registros por año
 
 ```r
-data_times %>%
+data_total_year <- data_times %>%
   mutate(years = as.integer(years)) %>% 
   group_by(years) %>%
   summarise(Sum = n()) %>% 
@@ -268,42 +272,83 @@ data_times %>%
   filter(years != '2023')
 ```
 
-```
-## # A tibble: 11 × 2
-##    years   Sum
-##    <int> <int>
-##  1  2022   124
-##  2  2021    20
-##  3  2020    29
-##  4  2019     5
-##  5  2018     2
-##  6  2017    14
-##  7  2016     1
-##  8  2015    11
-##  9  2014     1
-## 10  2012     2
-## 11  2011     1
-```
+<table class=" lightable-material-dark" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Años </th>
+   <th style="text-align:left;"> Total </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> 2022 </td>
+   <td style="text-align:left;"> 124 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2021 </td>
+   <td style="text-align:left;"> 20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2020 </td>
+   <td style="text-align:left;"> 29 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2019 </td>
+   <td style="text-align:left;"> 5 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2018 </td>
+   <td style="text-align:left;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> 2017 </td>
+   <td style="text-align:left;"> 14 </td>
+  </tr>
+</tbody>
+</table>
+
 Registros por año por taxón
 
 
+```r
+data_year_taxon <- data_times %>%
+  group_by(iconic_taxon_name, years)
 ```
-## # A tibble: 212 × 3
-## # Groups:   iconic_taxon_name, years [21]
-##           id iconic_taxon_name years
-##        <int> <chr>             <dbl>
-##  1   1266639 Mammalia           2011
-##  2  45628630 Mammalia           2012
-##  3  45628628 Mammalia           2012
-##  4 134577366 Mammalia           2014
-##  5 145689068 Mammalia           2015
-##  6 145690596 Mammalia           2015
-##  7 145693660 Mammalia           2015
-##  8 145693686 Mammalia           2015
-##  9 145693664 Mammalia           2015
-## 10 145760911 Mammalia           2015
-## # … with 202 more rows
-```
+
+<table class=" lightable-material-dark" style='font-family: "Source Sans Pro", helvetica, sans-serif; margin-left: auto; margin-right: auto;'>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Clase taxonómica </th>
+   <th style="text-align:left;"> Año </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Mammalia </td>
+   <td style="text-align:left;"> 2022 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Reptilia </td>
+   <td style="text-align:left;"> 2022 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mammalia </td>
+   <td style="text-align:left;"> 2022 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mammalia </td>
+   <td style="text-align:left;"> 2022 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Aves </td>
+   <td style="text-align:left;"> 2023 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Aves </td>
+   <td style="text-align:left;"> 2023 </td>
+  </tr>
+</tbody>
+</table>
 
 
 
@@ -315,7 +360,7 @@ data_times %>%
   scale_x_continuous(labels=as.character(data_times$years),breaks=data_times$years)
 ```
 
-<img src="{{< blogdown/postref >}}index.es_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index.es_files/figure-html/unnamed-chunk-12-1.png" width="672" />
 
 
 

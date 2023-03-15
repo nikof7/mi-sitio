@@ -22,8 +22,8 @@ sections:
     buttons:
     - name: All
       tag: '*'
-    - name: Deep Learning
-      tag: Deep Learning
+    - name: NaturalistaUY
+      tag: NaturalistaUY
     - name: Other
       tag: Demo
     default_button_index: 0
@@ -32,7 +32,7 @@ sections:
       - project
     title: Proyectos
   design:
-    columns: "1"
+    columns: "2"
     flip_alt_rows: false
     view: showcase
   id: projects
