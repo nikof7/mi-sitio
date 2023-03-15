@@ -6,35 +6,6 @@ sections:
     text: null
     username: admin
   id: about
-- block: experience
-  content:
-    date_format: Jan 2006
-    items:
-    - company: GenCoin
-      company_logo: org-gc
-      company_url: ""
-      date_end: ""
-      date_start: "2021-01-01"
-      description: |2-
-          Responsibilities include:
-
-          * Analysing
-          * Modelling
-          * Deploying
-      location: Uruguay
-      title: CEO
-    - company: University X
-      company_logo: org-x
-      company_url: ""
-      date_end: "2020-12-31"
-      date_start: "2016-01-01"
-      description: Taught electronic engineering and researched semiconductor physics.
-      location: California
-      title: Professor of Semiconductor Physics
-    title: Experiencia
-  design:
-    columns: "2"
-  id: experience
 - block: accomplishments
   content:
     date_format: Jan 2006
