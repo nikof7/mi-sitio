@@ -5,9 +5,9 @@ date: '2023-03-15'
 slug: naturalistauy-atropellos
 categories: []
 tags: []
-summary: ''
+summary: 'Este proyecto busca analizar y describir los datos sobre atropellos de vertebrados en el Uruguay. Utiliza los datos que se reúnen en otro proyecto de NaturalistaUY llamado "Fauna Atropellada del Uruguay'
 authors: []
-external_link: ''
+external_link: 'https://www.naturalista.uy/projects/fauna-atropellada-del-uruguay'
 image:
   caption: ''
   focal_point: ''
