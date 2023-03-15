@@ -106,10 +106,10 @@ sections:
 - block: collection
   content:
     filters:
-      featured_only: true
+      featured_only: false
       folders:
       - publication
-    title: Publiciones
+    title: Publicaciones
   design:
     columns: "2"
     view: card

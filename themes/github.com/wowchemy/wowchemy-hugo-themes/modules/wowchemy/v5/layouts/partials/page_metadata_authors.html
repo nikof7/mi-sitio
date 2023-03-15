@@ -12,7 +12,7 @@
       {{- if .RelPermalink -}}
         <a href="{{.RelPermalink}}">{{.LinkTitle}}</a>
       {{- else -}}
-        {{ .LinkTitle }}
+        {{ .LinkTitle | markdownify }}
       {{- end -}}
     </span>
     {{- if isset $.Params "author_notes" -}}

@@ -192,11 +192,6 @@ outcome %>%
   scroll_box(width = "100%")
 ```
 
-```{r}
-paged_table(outcome)
-```
-
-
 Esto es lo que decía antes sobre los números con coma:
 
 
