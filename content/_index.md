@@ -6,6 +6,36 @@ sections:
     text: null
     username: admin
   id: about
+- block: collection
+  content:
+    filters:
+      featured_only: false
+      folders:
+      - publication
+    title: Publicaciones
+  design:
+    columns: "2"
+    view: card
+  id: featured
+- block: portfolio
+  content:
+    buttons:
+    - name: All
+      tag: '*'
+    - name: Deep Learning
+      tag: Deep Learning
+    - name: Other
+      tag: Demo
+    default_button_index: 0
+    filters:
+      folders:
+      - project
+    title: Proyectos
+  design:
+    columns: "1"
+    flip_alt_rows: false
+    view: showcase
+  id: projects
 - block: accomplishments
   content:
     date_format: Jan 2006
@@ -55,36 +85,6 @@ sections:
   design:
     columns: "2"
   id: accomplishments
-- block: portfolio
-  content:
-    buttons:
-    - name: All
-      tag: '*'
-    - name: Deep Learning
-      tag: Deep Learning
-    - name: Other
-      tag: Demo
-    default_button_index: 0
-    filters:
-      folders:
-      - project
-    title: Proyectos
-  design:
-    columns: "1"
-    flip_alt_rows: false
-    view: showcase
-  id: projects
-- block: collection
-  content:
-    filters:
-      featured_only: false
-      folders:
-      - publication
-    title: Publicaciones
-  design:
-    columns: "2"
-    view: card
-  id: featured
 - block: contact
   content:
     address:
