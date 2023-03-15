@@ -14,7 +14,7 @@ publication_types:
   - '0'
 publication: ''
 publication_short: ''
-abstract: ' '
+abstract: ''
 featured: no
 url_pdf: "https://www.sarem.org.ar/wp-content/uploads/2021/04/SAREM_Resumenes-XXXIII-JAM_2022.pdf"
 url_code: ~
@@ -31,6 +31,9 @@ image:
 projects: []
 slides: ''
 ---
+
+# Resumen: 
+
 La selección de hábitat es un proceso jerárquico que involucra mecanismos actuando sobre distintos niveles de organización y escalas, desde patrones de distribución poblacional hasta el establecimiento de ámbitos de hogar y uso relativo de los microhábitats disponibles en estos por los individuos. Su evaluación adecuada requiere un diseño de muestreo y aproximación analítica que contemple explícitamente esos niveles jerárquicos.
 
 La región este de Uruguay reúne un conjunto de pequeñas áreas protegidas (APs) en paisajes rurales con distintos niveles de naturalidad y heterogeneidad ambiental, que albergan un ensamble de mamíferos medianamente diverso, cuya respuesta a los cambios en el uso del suelo no ha sido evaluada.
