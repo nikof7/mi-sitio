@@ -20,7 +20,7 @@ sections:
 - block: portfolio
   content:
     buttons:
-    - name: All
+    - name: Todo
       tag: '*'
     - name: NaturalistaUY
       tag: NaturalistaUY

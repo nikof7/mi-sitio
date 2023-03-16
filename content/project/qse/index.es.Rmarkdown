@@ -19,7 +19,7 @@ url_video: ''
 slides: ''
 ---
 
-¿Quiénes son ellas? Es un libro que recoge historias de 12 científicas uruguayas y surgió de un proyecto que nació en un aula multigrado en la escuela rural 32 de Progreso, Canelones. Con el fin de romper estereotipos de género y profesión, el trabajo invita a reflexionar acerca de a cuáles y cuántas uruguayas conocemos en STEM (en inglés, las iniciales de: ciencia, tecnología, ingeniería y matemáticas). Cuenta con actividades para que los/las docentes puedan llevarlas al aula, pero también se pueden realizar en cualquier lugar.
+¿Quiénes son ellas? Es un libro que recoge historias de 12 científicas uruguayas que nació en un aula multigrado en la escuela rural 32 de Progreso, Canelones. Con el fin de romper estereotipos de género y profesión, el trabajo invita a reflexionar acerca de a cuáles y cuántas uruguayas conocemos en STEM (en inglés, las iniciales de: ciencia, tecnología, ingeniería y matemáticas). Cuenta con actividades para que los/las docentes puedan llevarlas al aula, pero también se pueden realizar en cualquier lugar.
 
 
 > “Ellas son valientes, profesionales, líderes, apasionadas, pero también mujeres reales ¡que están vivas!, con incertidumbres y miedos como todos/as. A través de ellas queremos romper estereotipos de género y profesión, para que todos y todas nos animemos a estudiar, trabajar y jugar sin importar nuestro género.”
