@@ -4,7 +4,7 @@ author: ''
 date: '2023-03-16'
 slug: mammal-eco
 categories: []
-tags: []
+tags: ["academico"]
 summary: ''
 authors: []
 external_link: ''
@@ -29,6 +29,8 @@ Algunos de los intereses del equipo son:
 - Patrones de segregación espacial y temporal entre mamíferos silvestres nativos e introducidos. 
 - Tenencia y manejo de mascotas en Áreas Protegidas, y su impacto sobre el ensamble de mamíferos nativos.
 - Rasgos de los organismos y respuesta a agentes de forzamiento naturales y antropogénicos. 
+
+{{< gallery album="album1">}}
 
 ## Equipo
 

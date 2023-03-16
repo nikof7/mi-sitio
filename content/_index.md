@@ -24,8 +24,10 @@ sections:
       tag: '*'
     - name: NaturalistaUY
       tag: NaturalistaUY
-    - name: Other
-      tag: Demo
+    - name: Ciencia-Sociedad
+      tag: Ciencia-Sociedad
+    - name: Académico
+      tag: academico
     default_button_index: 0
     filters:
       folders:

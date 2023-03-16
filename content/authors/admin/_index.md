@@ -1,5 +1,5 @@
 ---
-bio: Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad.
+bio: Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad. Modificar esto.
 education:
   courses:
   - course: Licenciatura en Ciencias Biológicas
@@ -43,5 +43,5 @@ superuser: true
 title:
 ---
 
-Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad.
+Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad. Modificar esto.
 {style="text-align: justify;"}
