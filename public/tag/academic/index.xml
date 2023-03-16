@@ -1,22 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic</title>
-    <link>https://example.com/tag/academic/</link>
-      <atom:link href="https://example.com/tag/academic/index.xml" rel="self" type="application/rss+xml" />
+    <title>Academic | Nicolás Fernández-Sauleda</title>
+    <link>https://nico-fs.netlify.app/tag/academic/</link>
+      <atom:link href="https://nico-fs.netlify.app/tag/academic/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://nico-fs.netlify.app/media/icon_hu56882e65513abb732d19e37a3044a13a_1078_512x512_fill_lanczos_center_3.png</url>
       <title>Academic</title>
-      <link>https://example.com/tag/academic/</link>
+      <link>https://nico-fs.netlify.app/tag/academic/</link>
     </image>
     
     <item>
+      <title>Selección de hábitat multinivel en un ensamble de carnívoros en áreas protegidas de la Región Este de Uruguay</title>
+      <link>https://nico-fs.netlify.app/publication/sarem-xxxiii-jam/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://nico-fs.netlify.app/publication/sarem-xxxiii-jam/</guid>
+      <description>&lt;h1 id=&#34;resumen&#34;&gt;Resumen:&lt;/h1&gt;
+&lt;p&gt;La selección de hábitat es un proceso jerárquico que involucra mecanismos actuando sobre distintos niveles de organización y escalas, desde patrones de distribución poblacional hasta el establecimiento de ámbitos de hogar y uso relativo de los microhábitats disponibles en estos por los individuos. Su evaluación adecuada requiere un diseño de muestreo y aproximación analítica que contemple explícitamente esos niveles jerárquicos.&lt;/p&gt;
+&lt;p&gt;La región este de Uruguay reúne un conjunto de pequeñas áreas protegidas (APs) en paisajes rurales con distintos niveles de naturalidad y heterogeneidad ambiental, que albergan un ensamble de mamíferos medianamente diverso, cuya respuesta a los cambios en el uso del suelo no ha sido evaluada.&lt;/p&gt;
+&lt;p&gt;En ese contexto, el objetivo del presente estudio fue evaluar la selección de hábitat del ensamble de carnívoros pequeños y medianos presente en dichas AP utilizando una aproximación multi-nivel. Para ello, entre 2019 y 2022 se efectuaron relevamientos multi-escala en siete APs con un diseño agregado, instalando 60 sistemas de 3 estaciones de fototrampeo cada uno (distancia: 250-650 m entre estaciones, 2 km entre sistemas).&lt;/p&gt;
+&lt;p&gt;Los datos fueron analizados utilizando modelos de ocupación multi-nivel para determinar el efecto de la cobertura del suelo y las interacciones interespecíficas sobre la incidencia de especies a nivel de sistema y el uso relativo de ambientes a nivel de estación de fototrampeo.&lt;/p&gt;
+&lt;p&gt;Se registraron 10 especies de carnívoros, siendo tres cánidos (&lt;em&gt;Cerdocyon thous&lt;/em&gt;, &lt;em&gt;Lycalopex gymnocercus&lt;/em&gt; y &lt;em&gt;Canis familiaris&lt;/em&gt;), un mefítido (&lt;em&gt;Conepatus chinga&lt;/em&gt;) y un félido (&lt;em&gt;Leopardus geoffroyi&lt;/em&gt;) las más frecuentes. Aunque idiosincráticas, las respuestas más marcadas al uso del suelo y a la actividad de otras especies se expresaron a nivel de uso de microhábitats, siendo estas modificaciones en comportamiento más relevantes que los cambios en incidencia a escalas mayores. Estos resultados se discuten destacando las dificultades de los estudios de escala única para desambiguar dichos mecanismos.&lt;/p&gt;
+&lt;h2 id=&#34;financiamiento&#34;&gt;Financiamiento&lt;/h2&gt;
+&lt;p&gt;Semilleros de Iniciativas interdisciplinarias, EI-UdelaR. Régimen de Dedicación Total, UdelaR. ANII. CSIC-PAIE. PEDECIBA. ANID PIA/BASAL FB0002.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Welcome to Wowchemy, the website builder for Hugo</title>
-      <link>https://example.com/post/getting-started/</link>
+      <link>https://nico-fs.netlify.app/post/getting-started/</link>
       <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/getting-started/</guid>
+      <guid>https://nico-fs.netlify.app/post/getting-started/</guid>
       <description>&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;libr&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;hello&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;

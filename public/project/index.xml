@@ -1,36 +1,387 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Academic</title>
-    <link>https://example.com/project/</link>
-      <atom:link href="https://example.com/project/index.xml" rel="self" type="application/rss+xml" />
+    <title>Projects | Nicolás Fernández-Sauleda</title>
+    <link>https://nico-fs.netlify.app/project/</link>
+      <atom:link href="https://nico-fs.netlify.app/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://nico-fs.netlify.app/media/icon_hu56882e65513abb732d19e37a3044a13a_1078_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
-      <link>https://example.com/project/</link>
+      <link>https://nico-fs.netlify.app/project/</link>
     </image>
     
     <item>
-      <title>Example Project</title>
-      <link>https://example.com/project/example/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+      <title>¿Quiénes son ellas? 12 Mujeres Uruguayas en STEM</title>
+      <link>https://nico-fs.netlify.app/project/qse/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://nico-fs.netlify.app/project/qse/</guid>
+      <description>&lt;p&gt;¿Quiénes son ellas? Es un libro que recoge historias de 12 científicas uruguayas y surgió de un proyecto que nació en un aula multigrado en la escuela rural 32 de Progreso, Canelones. Con el fin de romper estereotipos de género y profesión, el trabajo invita a reflexionar acerca de a cuáles y cuántas uruguayas conocemos en STEM (en inglés, las iniciales de: ciencia, tecnología, ingeniería y matemáticas). Cuenta con actividades para que los/las docentes puedan llevarlas al aula, pero también se pueden realizar en cualquier lugar.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Ellas son valientes, profesionales, líderes, apasionadas, pero también mujeres reales ¡que están vivas!, con incertidumbres y miedos como todos/as. A través de ellas queremos romper estereotipos de género y profesión, para que todos y todas nos animemos a estudiar, trabajar y jugar sin importar nuestro género.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;equipo&#34;&gt;Equipo&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Autora: Tania Belén Fernández&lt;/li&gt;
+&lt;li&gt;Fotografías: Marcelo Casacuberta&lt;/li&gt;
+&lt;li&gt;Diseñador: Alejandro Sequeira&lt;/li&gt;
+&lt;li&gt;Corección: María Eugenia Martínez Caubarrére&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;mi-rol&#34;&gt;Mi rol&lt;/h1&gt;
 </description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>https://example.com/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/external-project/</guid>
-      <description></description>
+      <title>Ecología y conservación de mamíferos en la región este</title>
+      <link>https://nico-fs.netlify.app/project/mammal-eco/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://nico-fs.netlify.app/project/mammal-eco/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Equipo&#34; srcset=&#34;
+               /project/mammal-eco/wide_hu7da762dcbd2fac1c8a19632ffbd62876_1929415_a456bed0f3aa5dcdb781b87bccd89637.webp 400w,
+               /project/mammal-eco/wide_hu7da762dcbd2fac1c8a19632ffbd62876_1929415_26f510a1994ae0721dd7dd14d69ab856.webp 760w,
+               /project/mammal-eco/wide_hu7da762dcbd2fac1c8a19632ffbd62876_1929415_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://nico-fs.netlify.app/project/mammal-eco/wide_hu7da762dcbd2fac1c8a19632ffbd62876_1929415_a456bed0f3aa5dcdb781b87bccd89637.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;350&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Hemos relevado mediante cámaras trampas paisajes rurales y áreas protegidas del SNAP de la Región Este del país. He participado en la ejecución de campañas de muestreo, procesamiento y análisis de datos.&lt;/p&gt;
+&lt;p&gt;Algunos de los intereses del equipo son:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La incidencia y distribución de mamíferos silvestres introducidos en áreas protegidas.&lt;/li&gt;
+&lt;li&gt;Patrones de segregación espacial y temporal entre mamíferos silvestres nativos e introducidos.&lt;/li&gt;
+&lt;li&gt;Tenencia y manejo de mascotas en Áreas Protegidas, y su impacto sobre el ensamble de mamíferos nativos.&lt;/li&gt;
+&lt;li&gt;Rasgos de los organismos y respuesta a agentes de forzamiento naturales y antropogénicos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;equipo&#34;&gt;Equipo&lt;/h2&gt;
+&lt;p&gt;Ariel Farías, Eliana Walker, Jennifer González-Buve, Nicolás Fernández-Sauleda, Giancarlo Pedrini, Laura Artola, Andres Canavero,  Florencia Reichmann, Elias G. Guerra y Ana Elisa Röhrdanz.&lt;/p&gt;
+&lt;h2 id=&#34;lugar&#34;&gt;Lugar&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cure.edu.uy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Departamento de Ecología y Gestión Ambiental, CURE, Maldonado.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;años&#34;&gt;Años&lt;/h2&gt;
+&lt;p&gt;2022 - Actualidad&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NaturalistaUY: Fauna atropellada del Uruguay</title>
+      <link>https://nico-fs.netlify.app/project/naturalistauy-atropellos/</link>
+      <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://nico-fs.netlify.app/project/naturalistauy-atropellos/</guid>
+      <description>&lt;script src=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.naturalista.uy/projects/fauna-atropellada-del-uruguay&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Puedes visitar el proyecto de Naturalista UY desde aquí&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Falta describir un poco más sobre de qué es el proyecto. En qué etapa está, a dónde apunta, etc.
+Revisar código y datos generados.
+Actualizar base de datos.&lt;/p&gt;
+&lt;h2 id=&#34;utilizando-el-csv-del-proyecto&#34;&gt;Utilizando el csv del proyecto&lt;/h2&gt;
+&lt;p&gt;Se descarga el archivo csv desde iNaturalist y se carga.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;read.csv2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;data.csv&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sep&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;user_id&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;iconic_taxon_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;scientific_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;common_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;quality_grade&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;latitude&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;longitude&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;time_observed_at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;created_at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tag_list&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;license&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;url&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;as_tibble&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;mutate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;time_observed_at&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;ymd_hms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;time_observed_at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;created_at&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;ymd_hms&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;created_at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div style=&#34;border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:100%; &#34;&gt;&lt;table class=&#34; lightable-material-dark&#34; style=&#39;font-family: &#34;Source Sans Pro&#34;, helvetica, sans-serif; margin-left: auto; margin-right: auto;&#39;&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; ID &lt;/th&gt;
+   &lt;th style=&#34;text-align:right;&#34;&gt; ID de usuario &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Clase &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Nombre científico &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Nombre común &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Grado de calidad &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Latitud &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Longitud &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Observado &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Creado &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Lista de tags &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Descripción &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Licencia &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; URL &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 87222 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 1178 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Procyon cancrivorus &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mano pelada &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; research &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -34.1866718618 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -53.7563180923 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; NA &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2012-06-04 14:15:57 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; CC-BY &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; http://www.inaturalist.org/observations/87222 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 1266639 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 1178 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Cerdocyon thous &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Zorro De Monte &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; research &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -34.182589 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -53.752885 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2011-01-10 12:52:33 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2015-03-02 17:25:37 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; CC-BY &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; http://www.inaturalist.org/observations/1266639 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 6970136 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 477998 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Didelphis albiventris &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Comadreja overa &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; research &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -32.37997905 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -53.92697861 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017-07-08 09:49:38 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017-07-08 19:43:56 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; CC-BY-NC &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; https://www.inaturalist.org/observations/6970136 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 6970137 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 477998 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Cerdocyon thous &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Zorro De Monte &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; research &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -32.37826382 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -54.00389455 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017-07-08 11:22:24 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017-07-08 19:44:01 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; CC-BY-NC &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; https://www.inaturalist.org/observations/6970137 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 6970138 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 477998 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Lycalopex gymnocercus &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Zorro Gris &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; research &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -32.38082107 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -54.01652109 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017-07-08 11:29:39 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017-07-08 19:44:03 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; CC-BY-NC &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; https://www.inaturalist.org/observations/6970138 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 7036602 &lt;/td&gt;
+   &lt;td style=&#34;text-align:right;&#34;&gt; 477998 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Conepatus chinga &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Zorrino &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; research &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -32.56051339 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; -54.57835282 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017-07-11 10:29:07 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017-07-13 15:04:37 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt;  &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; CC-BY-NC &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; https://www.inaturalist.org/observations/7036602 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;&lt;/div&gt;
+&lt;h2 id=&#34;exploración-de-los-datos&#34;&gt;Exploración de los datos&lt;/h2&gt;
+&lt;p&gt;Se comienza por describir la cantidad de observaciones por clase taxonómica.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;obs_per_class&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;group_by&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iconic_taxon_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;summarise&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;arrange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table class=&#34; lightable-material-dark&#34; style=&#39;font-family: &#34;Source Sans Pro&#34;, helvetica, sans-serif; margin-left: auto; margin-right: auto;&#39;&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:center;&#34;&gt; Clase &lt;/th&gt;
+   &lt;th style=&#34;text-align:center;&#34;&gt; Cantidad &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; Amphibia &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; Aves &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 14 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; Reptilia &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 86 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:center;&#34;&gt; 116 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Se observa un claro sesgo hacia los registros de mamíferos.&lt;/p&gt;
+&lt;p&gt;Pasemos a analizar esta característica pero en relación a los años, para esto se debe trabajar un poco la información.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data_times&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;drop_na&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;time_observed_at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;arrange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;time_observed_at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;mutate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;year&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;time_observed_at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;select&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iconic_taxon_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table class=&#34; lightable-material-dark&#34; style=&#39;font-family: &#34;Source Sans Pro&#34;, helvetica, sans-serif; margin-left: auto; margin-right: auto;&#39;&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Clase taxonómica &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Año &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2011 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2012 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2012 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2014 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2015 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2015 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Total de registros por año&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data_total_year&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data_times&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;mutate&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;as.integer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;group_by&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;summarise&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Sum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;arrange&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;filter&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#39;2023&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table class=&#34; lightable-material-dark&#34; style=&#39;font-family: &#34;Source Sans Pro&#34;, helvetica, sans-serif; margin-left: auto; margin-right: auto;&#39;&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Años &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Total &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2022 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 124 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2021 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 20 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2020 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 29 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2019 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2018 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2017 &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 14 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Registros por año por taxón&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data_year_taxon&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data_times&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;group_by&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iconic_taxon_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table class=&#34; lightable-material-dark&#34; style=&#39;font-family: &#34;Source Sans Pro&#34;, helvetica, sans-serif; margin-left: auto; margin-right: auto;&#39;&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Clase taxonómica &lt;/th&gt;
+   &lt;th style=&#34;text-align:left;&#34;&gt; Año &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2022 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Reptilia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2022 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2022 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Mammalia &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2022 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Aves &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2023 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; Aves &lt;/td&gt;
+   &lt;td style=&#34;text-align:left;&#34;&gt; 2023 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;data_times&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;%&amp;gt;%&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;ggplot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;aes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;fill&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;factor&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;iconic_taxon_name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;geom_bar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;position&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;position_dodge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;())&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nf&#34;&gt;scale_x_continuous&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;labels&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;as.character&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data_times&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;breaks&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;data_times&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;$&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;years&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;img src=&#34;https://nico-fs.netlify.app/project/naturalistauy-atropellos/index.es_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;672&#34; /&gt;
+</description>
     </item>
     
   </channel>
