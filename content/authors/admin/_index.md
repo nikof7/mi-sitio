@@ -1,5 +1,5 @@
 ---
-bio: Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad. Modificar esto.
+bio: "¡Hola! Como estudiante de ciencias biológicas de Uruguay, mi pasión es explorar la interacción entre los seres humanos y la vida silvestre. Mi enfoque se centra en la ecología funcional. Y exploro cómo podrían ser los efectos de la actividad humana en la presencia y comportamiento de perros de vida libre en áreas protegidas, y posteriormente cómo estos podrían estar afectando a la dinámica de las comunidades."
 education:
   courses:
   - course: Licenciatura en Ciencias Biológicas
@@ -43,5 +43,5 @@ superuser: true
 title:
 ---
 
-Mis intereses de investigación incluyen ciencia de datos, vida salvaje, conservación, áreas de distribución y ciencia-sociedad. Modificar esto.
-{style="text-align: justify;"}
+¡Hola! Soy un estudiante de ciencias biológicas de Uruguay apasionado por explorar la interacción entre seres humanos y vida silvestre. Me enfoco en la **ecología funcional** y me interesa cómo la actividad humana afecta la presencia y comportamiento de **perros de vida libre** en áreas protegidas, y su impacto en las comunidades. Además, creo en la accesibilidad de la ciencia para democratizar el conocimiento y fomentar la participación de la sociedad en la actividad científica.
+{style="text-align: left;"}
